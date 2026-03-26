@@ -1,2 +1,2 @@
 # Learning Go Lang
-This repo contains the basic of GO.
+This repo contains the basics of GO.
