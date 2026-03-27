@@ -2,19 +2,29 @@ package main
 
 import (
 	"fmt"
-	"learn_go/advanced"
 	"learn_go/basics"
-	"learn_go/interfaces"
-	"learn_go/miscellaneous"
 )
 
 func main() {
-	advanced.Channel()
-	basics.Datatypes()
-	//concurrency.GoRoutine1()
 
-	p := interfaces.Person1{Name: "Prathmesh"}
-	fmt.Println(p.Display())
+	// Nested Structure example
+	e := basics.Employee{
+		Name: "Vivek",
+		Age:  21,
+		Address: basics.Address{
+			City: "Pune",
+		},
+	}
+	fmt.Println("Details of Employee: ", e.Name, e.Age, e.Address.City)
 
-	miscellaneous.Divide(18, 3)
+	// Value Receiver Example
+	c := basics.Car{Name: "Mercedes"}
+	c.ChangeCar("BMW")
+	fmt.Println("Printing Car Name: ", c.Name) // Value of the car does not change
+
+	// Pointer Receiver Example
+	f := basics.Fruit{Color: "Red"}
+	f.ChangeColour("Green") // Color Changes to Green
+	fmt.Println("Color of Fruit: ", f.Color)
+
 }

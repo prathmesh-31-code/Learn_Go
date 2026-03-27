@@ -8,11 +8,11 @@ type Text interface {
 	display() string
 }
 
-type Person1 struct {
+type Person struct {
 	Name string
 }
 
-func (p Person1) Display() string {
+func (p Person) Display() string {
 	return p.Name
 }
 
