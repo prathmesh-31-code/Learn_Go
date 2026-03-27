@@ -69,6 +69,21 @@ func getPointer() *int {
 
 ##  4. Escape Analysis (Key Concept)
 
+What does "escape" mean?
+
+In Go, a variable escapes when it cannot safely stay inside the function where it was created.
+
+In simple terms:
+
+* If a variable is used outside its function, it escapes
+* If Go cannot guarantee it will be used only locally, it moves it to the heap
+
+Why does this matter?
+Stack memory is fast but temporary
+Heap memory is slower but survives longer
+
+So if something needs to live longer than the function → it must go to the heap
+
 Go compiler decides:
  “Stack or Heap?”
 
@@ -115,6 +130,7 @@ var globalVar = 100
 ##  6. Garbage Collector (GC)
 
 Go uses a **concurrent, tri-color mark-and-sweep GC**
+The Garbage Collector (GC) in Go is responsible for automatically managing heap memory—so you don’t have to manually free memory like in C/C++.
 
 ### Responsibilities:
 
