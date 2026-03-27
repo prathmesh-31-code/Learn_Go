@@ -130,6 +130,7 @@ var globalVar = 100
 ##  6. Garbage Collector (GC)
 
 Go uses a **concurrent, tri-color mark-and-sweep GC**
+
 The Garbage Collector (GC) in Go is responsible for automatically managing heap memory—so you don’t have to manually free memory like in C/C++.
 
 ### Responsibilities:
