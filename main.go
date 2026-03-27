@@ -27,4 +27,10 @@ func main() {
 	f.ChangeColour("Green") // Color Changes to Green
 	fmt.Println("Color of Fruit: ", f.Color)
 
+	// Composition example
+
+	d := basics.Dog{}
+	d.Name = "Clove"
+	fmt.Println(d.Name)
+
 }
