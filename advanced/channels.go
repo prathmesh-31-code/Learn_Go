@@ -7,7 +7,7 @@ import (
 
 // Channels are used to send and receive data between go routines
 
-func channel() {
+func Channel() {
 	ch1 := make(chan string)
 	ch2 := make(chan string)
 

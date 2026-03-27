@@ -1,10 +1,18 @@
 package miscellaneous
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
-func Divide(a, b int) (int, error) {
+func Divide(a, b float64) (float64, error) {
 	if b == 0 {
-		return 0, errors.New("cannot divide by zero")
+		err := errors.New("cannot divide by zero")
+		fmt.Println("Error:", err) // printing here
+		return 0, err
 	}
-	return a / b, nil
+
+	result := a / b
+	fmt.Println("Division result:", result)
+	return result, nil
 }

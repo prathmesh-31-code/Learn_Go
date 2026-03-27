@@ -4,19 +4,19 @@ package interfaces
 // A Interface defines a set of methods without providing their code
 // just like data abstraction
 
-type text interface {
+type Text interface {
 	display() string
 }
 
 type Person1 struct {
-	name string
+	Name string
 }
 
-func (p Person1) display() string {
-	return p.name
+func (p Person1) Display() string {
+	return p.Name
 }
 
-type result interface {
+type Result interface {
 	displayResult() int
 }
 
@@ -25,6 +25,6 @@ type Area struct { // Area type that implements the result interface
 	width  int
 }
 
-func (a Area) displayResult() int {
+func (a Area) DisplayResult() int {
 	return a.length * a.width
 }
