@@ -133,6 +133,12 @@ Go uses a **concurrent, tri-color mark-and-sweep GC**
 
 The Garbage Collector (GC) in Go is responsible for automatically managing heap memory—so you don’t have to manually free memory like in C/C++.
 
+Go uses a tri-color mark-and-sweep algorithm:
+
+* Mark → Find all reachable objects
+* Sweep → Remove unreachable ones
+* Reuse → Freed memory becomes available
+
 ### Responsibilities:
 
 * Frees unused heap memory
