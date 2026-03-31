@@ -21,31 +21,6 @@ It is designed for simplicity, performance, and scalability.
 
 ---
 
-## 📂 Project Structure
-
-```
-.
-├── advanced
-│   ├── channels.go
-│   ├── type_assertion.go
-│   └── type_switch.go
-├── basics
-│   ├── Datatypes.go
-│   ├── maps.go
-│   ├── pointer.go
-│   └── structures.go
-├── concurrency
-│   └── go_routines.go
-├── interfaces
-│   └── interfaces.go
-├── main.go
-├── miscellaneous
-│   ├── DPR.go
-│   └── error_handling.go
-└── README.md
-
-```
-
 ---
 
 ## 🧠 Topics Covered
