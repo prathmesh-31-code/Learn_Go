@@ -1,3 +1,12 @@
+/*
+Goroutines Basics
+Problem 1: Print Numbers Concurrently
+Print numbers from 1 to 5 using goroutines.
+Requirements:
+Each number should be printed from a separate goroutine
+Ensure the program doesn’t exit early
+*/
+
 package concurrency
 
 import (
